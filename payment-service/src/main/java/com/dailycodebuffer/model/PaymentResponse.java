@@ -1,0 +1,22 @@
+package com.dailycodebuffer.model;
+
+import lombok.Builder;
+import lombok.Data;
+
+import java.time.Instant;
+
+/**
+ * service-registry
+ * Elxan
+ * 01.08.2023 16:27
+ */
+@Data
+@Builder
+public class PaymentResponse {
+    private long paymentId;
+    private String status;
+    private PaymentMode paymentMode;
+    private long amount;
+    private Instant paymentDate;
+    private long orderId;
+}
